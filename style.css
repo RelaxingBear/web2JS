@@ -1,0 +1,68 @@
+img { display : block;
+    margin : auto;
+}
+
+a {
+  color:blue;
+  text-decoration: none;
+}
+
+h1 {
+  font-size:45px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin:0;
+  padding: 20px;
+}
+
+ol {
+  border-right: 1px solid black;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+
+body {
+  margin:0;
+}
+
+#night_day {
+  position:absolute;
+  width:auto;
+  height:auto;
+  color:white;
+  background-color: black;
+  border-color: white;
+  font-size: 20px;
+  font-style:oblique;
+  right: 10px;
+  top: 10px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+  padding-left: 33px;
+}
+
+#grid #article {
+  padding-left:25px;
+}
+
+  @media(max-width:800px){ /*800px보다 작으면 아래의 내용을 실시함 : 리스트 오른쪽의 실선과 h1아래의 선이 사라지고 display가 grid에서 block으로 변경*/
+  #grid {
+    display: block;
+  }
+  ol {
+    border-right:none;
+  }
+  h1 {
+    border-bottom:none;
+  }
+}
+img {
+  padding:25px;
+}
